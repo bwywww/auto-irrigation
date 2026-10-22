@@ -1,0 +1,29 @@
+{
+  "name": "smart-irrigation-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host localhost --port 5173 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host localhost --port 5173 --strictPort",
+    "test": "vitest run",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "idb": "^8.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/web-bluetooth": "^0.0.21",
+    "fake-indexeddb": "^6.2.4",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0",
+    "vitest": "^4.1.12"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}
